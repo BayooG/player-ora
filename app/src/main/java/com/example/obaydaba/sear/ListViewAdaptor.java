@@ -1,0 +1,47 @@
+package com.example.obaydaba.sear;
+
+import android.content.Context;
+import android.support.annotation.LayoutRes;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.List;
+
+/**
+ * Created by obay on 6/29/2017.
+ */
+
+public class ListViewAdaptor  extends ArrayAdapter<Product> {
+
+
+    public ListViewAdaptor(@NonNull Context context, @LayoutRes int resource, @NonNull List<Product> objects) {
+        super(context, resource, objects);
+    }
+
+    @NonNull
+    @Override
+    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+        View v =convertView;
+        if(v==null){
+            LayoutInflater inflater =(LayoutInflater) getContext().getSystemService(getContext().LAYOUT_INFLATER_SERVICE);
+            v =inflater.inflate(R.layout.list_item,null);
+        }
+        Product product = getItem(position);
+        ImageView img = (ImageView) v.findViewById(R.id.imageView);
+        TextView name = (TextView) v.findViewById(R.id.txtitle);
+        TextView artist = (TextView) v.findViewById(R.id.artist);
+        TextView txTitle =(TextView) v.findViewById(R.id.description);
+
+        img.setImageDrawable(product.cover);
+        txTitle.setText(product.title);
+        artist.setText(product.artist);
+        name.setText(product.name);
+        return v;
+    }
+}

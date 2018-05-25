@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:layoutDirection="ltr"
+    app:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+    >
+
+
+    <ImageButton
+        android:id="@+id/btprev"
+        android:visibility="visible"
+        android:layout_width="55dp"
+        android:background="#FFd1d1d1"
+        android:scaleType="fitCenter"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_skip_previous_black_36dp" />
+
+    <ImageButton
+        android:id="@+id/btfb"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:background="#FFd1d1d1"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_fast_rewind_black_36dp" />
+
+    <ImageButton
+        android:id="@+id/btplay"
+        android:layout_width="61dp"
+        android:layout_height="45dp"
+        android:scaleType="fitCenter"
+        android:background="#FFd1d1d1"
+        android:src="@mipmap/ic_play_circle_outline_black_36dp" />
+
+    <ImageButton
+        android:scaleType="fitCenter"
+
+        android:id="@+id/btff"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:background="#FFd1d1d1"
+
+        android:src="@mipmap/ic_fast_forward_black_36dp" />
+
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:background="#FFd1d1d1"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_skip_next_black_36dp"
+        android:id="@+id/btnext"/>
+
+
+
+
+</LinearLayout>

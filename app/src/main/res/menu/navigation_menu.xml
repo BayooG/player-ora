@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Audio">
+
+        <menu
+            android:visible="true"
+            android:enabled="true">
+
+            <item android:id="@+id/nav_library"
+                android:icon="@mipmap/ic_library_music_white_24dp"
+                android:checkable="true"
+                android:title="Library"/>
+
+            <item android:id="@+id/nav_fav"
+                android:checkable="true"
+                android:icon="@mipmap/ic_favorite_white_36dp"
+                android:title="Favorite"/>
+
+            <item android:id="@+id/nav_play"
+                android:checkable="true"
+                android:icon="@mipmap/ic_play_circle_outline_white_24dp"
+                android:title="Playing Now" />
+
+        </menu>
+
+
+    </item>
+
+    <item android:title="Video">
+        <menu>
+            <item android:id="@+id/fav_vid"
+                android:checkable="true"
+                android:icon="@mipmap/ic_ondemand_video_black_24dp"
+                android:title="Video Library"/>
+
+
+        </menu>
+
+
+
+    </item>
+
+    <item android:title="Networking">
+            <menu>
+                <item android:id="@+id/nav_stream"
+                    android:checkable="true"
+                    android:icon="@mipmap/ic_wifi_tethering_white_24dp"
+                    android:title="Stream                (beta)"/>
+
+                <item android:id="@+id/nav_down"
+                    android:checkable="true"
+                    android:icon="@mipmap/ic_file_download_black_24dp"
+                    android:title="Download"/>
+
+
+            </menu>
+
+        </item>
+
+    <item android:title="About"
+        android:checkable="true"
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_settings_white_24dp"/>
+
+    <item android:title="New features.. soon!"
+        android:checkable="false"
+        android:enabled="false"/>
+
+</menu>

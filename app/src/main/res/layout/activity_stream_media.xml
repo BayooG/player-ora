@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.obaydaba.sear.StreamMedia"
+    android:weightSum="1"
+    android:background="#d1d1d1">
+
+    <SeekBar
+        android:id="@+id/seekStream"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/name"
+        android:text="STREAM"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:src="@drawable/st" />
+
+    <include
+
+        layout="@layout/stream_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </include>
+
+</LinearLayout>

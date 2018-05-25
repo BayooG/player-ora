@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:id="@+id/vid_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textColor="#00000F"
+        android:textStyle="bold|italic"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="Title" />
+
+    <TextView
+        android:id="@id/time"
+        android:layout_width="80dp"
+        android:textColor="#b600000F"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/vid_title" />
+
+    <TextView
+        android:id="@+id/stati"
+        android:textColor="#b600000F"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Duration:"
+        android:textStyle="italic"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:layout_below="@+id/vid_title"
+        android:layout_toStartOf="@+id/time" />
+    <TextView
+        android:id="@+id/reso"
+        android:layout_width="90dp"
+        android:textColor="#b600000F"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:layout_alignBaseline="@+id/stati"
+        android:layout_alignBottom="@+id/stati"
+        android:layout_toStartOf="@+id/stati" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context="com.example.obaydaba.sear.Stream"
+    android:id="@+id/streamDrawer">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.obaydaba.sear.Stream">
+
+        <Button
+            android:id="@+id/stream"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stream"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="501dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true" />
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/streamBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/holo_red_dark"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:titleTextColor="@color/white" />
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/url"
+            android:gravity="center"
+
+            android:text="Enter any https to open media stream directly "
+            android:textSize="26dp"
+            android:textStyle="italic"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:layout_marginTop="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:hint="https://www.12345.org/file.m4a"
+            android:gravity="center"
+            android:maxLines="2"
+            android:id="@+id/url" />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:itemTextColor="#a9000000"
+        android:background="#ffffff"
+        android:id="@+id/nav_sview"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+
+
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
